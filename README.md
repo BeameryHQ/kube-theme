@@ -16,7 +16,7 @@ Once the theme is there, we can then set it to be our theme inside or `~/.zshrc`
 ## Install for bash-it
 Once checked out and inside this directory, we can run:
 ```sh
-ln -sf $(pwd)/kube.theme.bash ${BASH_IT}/themes
+ln -sf $(pwd)/kube.theme.bash ${BASH_IT}/themes/kube
 ```
 
 Once the theme is there, simple update the `BASH_IT_THEME` inside `~/.bashrc`
