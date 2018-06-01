@@ -36,7 +36,9 @@ GIT_THEME_PROMPT_PREFIX="${white}("
 GIT_THEME_PROMPT_SUFFIX="${white})"
 
 function prompt_command() {
-    PS1="\n${cyan}[$(__kubernetes_context):$(__kubernetes_namespace)] ${reset_color} ${grey}\w $(scm_prompt_info)${reset_color}\n» "
+    # Ensuring any warnings from kubectl are piped to dev null
+    # to keep any unneeded panic underwraps
+    PS1="\n${cyan}[$(__kubernetes_context 2>/dev/null):$(__kubernetes_namespace 2>/dev/null)] ${reset_color} ${grey}\w $(scm_prompt_info)${reset_color}\n» "
 }
 
 safe_append_prompt_command prompt_command

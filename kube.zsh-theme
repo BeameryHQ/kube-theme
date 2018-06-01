@@ -27,6 +27,8 @@ ZSH_THEME_GIT_PROMPT_CLEAN="$FG[154]✓"
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[white]%})"
 
-PROMPT='%{$fg[cyan]%}[$(__kubernetes_context):$(__kubernetes_namespace)] \
+# Ensuring any errors outputted by kubectl is hidden
+# to keep away any unneeded panic
+PROMPT='%{$fg[cyan]%}[$(__kubernetes_context 2>/dev/null):$(__kubernetes_namespace 2>/dev/null)] \
 %{$reset_color%}$FG[136]%~$(git_prompt_info)
 %{$reset_color%}» '
