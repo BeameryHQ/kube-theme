@@ -1,5 +1,5 @@
 # Kube Theme - Making life easier for a K8s admin
-[![asciicast](https://asciinema.org/a/NV5RrgPIiyuLnQWtzfAO3U17P.png)](https://asciinema.org/a/NV5RrgPIiyuLnQWtzfAO3U17P)
+[![asciicast](https://asciinema.org/a/himKx9BgbjArVvbxtAj2vJg2e.png)](https://asciinema.org/a/himKx9BgbjArVvbxtAj2vJg2e)
 # Usage
 
 Once you have cloned this repo down onto your local machine, we can them prepare them for
