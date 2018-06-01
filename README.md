@@ -1,5 +1,6 @@
 # Kube Theme - Making life easier for a K8s admin
 [![asciicast](https://asciinema.org/a/himKx9BgbjArVvbxtAj2vJg2e.png)](https://asciinema.org/a/himKx9BgbjArVvbxtAj2vJg2e)
+*Always know what kubernetes context you're in*
 # Usage
 
 Once you have cloned this repo down onto your local machine, we can them prepare them for
