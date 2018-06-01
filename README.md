@@ -1,6 +1,7 @@
 # Kube Theme - Making life easier for a K8s admin
 
 # Usage
+
 Once you have cloned this repo down onto your local machine, we can them prepare them for
 your terminal.
 ## Install for ohmyzsh (zsh)
@@ -14,9 +15,10 @@ Once the theme is there, we can then set it to be our theme inside or `~/.zshrc`
 - `kube`
 
 ## Install for bash-it
+
 Once checked out and inside this directory, we can run:
 ```sh
-ln -sf $(pwd)/kube.theme.bash ${BASH_IT}/themes/kube
+ln -sf $(pwd)/kube.theme.bash ${BASH_IT}/themes/kube/kube.theme.bash
 ```
 
 Once the theme is there, simple update the `BASH_IT_THEME` inside `~/.bashrc`
