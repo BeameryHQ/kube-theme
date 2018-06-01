@@ -22,11 +22,11 @@ __kubernetes_namespace() {
 }
 
 # Global Command Line settings
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[orange]%}✗"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}✓"
+ZSH_THEME_GIT_PROMPT_DIRTY="$FG[160]✗"
+ZSH_THEME_GIT_PROMPT_CLEAN="$FG[154]✓"
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[white]%})"
 
 PROMPT='%{$fg[cyan]%}[$(__kubernetes_context):$(__kubernetes_namespace)] \
-%{$reset_color%}%{$fg[grey]%}%~$(git_prompt_info) \
-\n%{$reset_color%}» '
+%{$reset_color%}$FG[136]%~$(git_prompt_info)
+%{$reset_color%}» '
